@@ -14,7 +14,7 @@
 function getRandomImage() {
     var num = Math.floor( Math.random() * 6);
     var img = ImageArray[num];
-    document.getElementById("randImage").textContent = ('/img/ + img ')
+    document.getElementById("randImage").textContent = ('<meta http-equiv='refresh' content='1;/img/' + img + '>')
 
 }
 </script>
@@ -34,6 +34,6 @@ function getRandomImage() {
 </style>
 </head>
 <body>
-	<meta http-equiv='refresh' content='1;id="randImage"'>
+<div id="randImage"></div>
 </body>
 </html>
