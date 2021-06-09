@@ -1,6 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
+<script type="text/javascript">
+    ImageArray = new Array();
+    image[0] = '1.jpg';
+    image[1] = '2.jpg';
+    image[2] = '3.jpg';
+    image[3] = '4.png';
+    image[4] = '5.jpg';
+    image[5] = '6.jpg';
+    image[6] = '7.jpg';
+
+function getRandomImage() {
+    var num = Math.floor( Math.random() * 6);
+    var img = ImageArray[num];
+    document.getElementById("randImage").textContent = ('/img/ + img ')
+
+}
+</script>
 <title>image</title>
 <style>
 	body {
@@ -17,6 +34,6 @@
 </style>
 </head>
 <body>
-	<meta http-equiv='refresh' content='1;/img/1.jpg'>
+	<meta http-equiv='refresh' content='1;id="randImage"'>
 </body>
 </html>
